@@ -164,28 +164,50 @@ function App() {
             创作 - 分发 - 使用：构建生生不息的Desktop生态闭环
           </h2>
           <div className="relative">
-            <div className="absolute top-1/2 left-0 w-full h-1 bg-indigo-100"></div>
-            <div className="relative grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white p-6 rounded-xl shadow-sm">
-                <Code className="w-12 h-12 text-indigo-600 mb-4" />
-                <h3 className="text-xl font-semibold mb-3">创作</h3>
-                <p className="text-gray-600">
-                  设计师在Desktop Builder中将灵感转化为数字作品
-                </p>
+            <div className="flex flex-col md:flex-row items-center justify-around">
+              {/* 步骤一：创建内容 */}
+              <div className="relative w-40 h-40 rounded-full bg-white shadow-md flex flex-col items-center justify-center mb-8 md:mb-0">
+                <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600">
+                  <Code className="w-8 h-8" />
+                </div>
+                <h3 className="text-xl font-semibold mt-2">创建内容</h3>
+                <p className="text-gray-600 text-sm text-center">设计师开发新设计和构建。</p>
               </div>
-              <div className="bg-white p-6 rounded-xl shadow-sm">
-                <Store className="w-12 h-12 text-indigo-600 mb-4" />
-                <h3 className="text-xl font-semibold mb-3">分发</h3>
-                <p className="text-gray-600">
-                  作品上传至Codigger Store，面向全球用户展示和销售
-                </p>
+
+              {/* 步骤二：分发设计 */}
+              <div className="relative w-40 h-40 rounded-full bg-white shadow-md flex flex-col items-center justify-center mb-8 md:mb-0">
+                <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600">
+                  <Store className="w-8 h-8" />
+                </div>
+                <h3 className="text-xl font-semibold mt-2">分发设计</h3>
+                <p className="text-gray-600 text-sm text-center">通过Store连接用户</p>
               </div>
-              <div className="bg-white p-6 rounded-xl shadow-sm">
-                <Users className="w-12 h-12 text-indigo-600 mb-4" />
-                <h3 className="text-xl font-semibold mb-3">使用</h3>
-                <p className="text-gray-600">
-                  用户通过Configure Look轻松应用和自定义桌面
-                </p>
+
+              {/* 步骤三：应用外观 */}
+              <div className="relative w-40 h-40 rounded-full bg-white shadow-md flex flex-col items-center justify-center mb-8 md:mb-0">
+                <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600">
+                  <Palette className="w-8 h-8" />
+                </div>
+                <h3 className="text-xl font-semibold mt-2">应用外观</h3>
+                <p className="text-gray-600 text-sm text-center">用户配置和应用设计。</p>
+              </div>
+
+              {/* 步骤四：收集反馈 */}
+              <div className="relative w-40 h-40 rounded-full bg-white shadow-md flex flex-col items-center justify-center mb-8 md:mb-0">
+                <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600">
+                  <span>💬</span> {/* 使用一个简单的聊天气泡图标代替 */}
+                </div>
+                <h3 className="text-xl font-semibold mt-2">收集反馈</h3>
+                <p className="text-gray-600 text-sm text-center">用户提供体验反馈。</p>
+              </div>
+
+              {/* 步骤五：优化设计 */}
+              <div className="relative w-40 h-40 rounded-full bg-white shadow-md flex flex-col items-center justify-center mb-8 md:mb-0">
+                <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600">
+                  <RefreshCw className="w-8 h-8" />
+                </div>
+                <h3 className="text-xl font-semibold mt-2">优化设计</h3>
+                <p className="text-gray-600 text-sm text-center">设计师根据反馈改进设计。</p>
               </div>
             </div>
           </div>
